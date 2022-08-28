@@ -38,6 +38,7 @@ graph TD;
     layouts-->components;
     layouts-->widgets;
     components-->widgets;
+    components-->components;
 ```
 
 ```json
