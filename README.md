@@ -40,6 +40,16 @@ graph TD;
     hooks-->widgets
 ```
 
+```mermaid
+graph TD;
+    styles-->constants;
+    styles-->types;
+    constants-->types;
+    types-->constants;
+    styles-->all other folders;
+    constants-->all other folders;
+    types-->all other folders;
+```
 
 ```json
 {
