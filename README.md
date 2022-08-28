@@ -24,12 +24,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```mermaid
 graph TD;
-    styles-->helpers;
-    styles-->basics;
-    styles-->layouts;
-    styles-->components;
-    styles-->widgets;
-    styles-->hooks;
     helpers-->basics;
     helpers-->layouts;
     helpers-->components;
@@ -41,7 +35,6 @@ graph TD;
     layouts-->components;
     layouts-->widgets;
     components-->widgets;
-    components-->components;
     hooks-->components
     hooks-->layouts
     hooks-->widgets
