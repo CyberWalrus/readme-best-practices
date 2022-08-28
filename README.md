@@ -41,14 +41,35 @@ graph TD;
 ```
 
 ```mermaid
-graph TD;
-    styles-->constants;
-    styles-->types;
-    constants-->types;
-    types-->constants;
-    styles-->all other folders;
-    constants-->all other folders;
-    types-->all other folders;
+flowchart TB
+    styles-->shared-folders
+    styles-->react-folders
+    shared-folders-->react-folders
+    styles-->supporting-folders
+    react-folders-->supporting-folders
+    shared-folders-->supporting-folders
+    subgraph shared-folders
+    types-->constants
+    constants-->types
+    types-->helpers
+    constants-->helpers
+    end
+    subgraph react-folders
+    basics-->layouts
+    basics-->components
+    basics-->widgets
+    hooks-->layouts
+    hooks-->components
+    hooks-->widgets
+    layouts-->components
+    layouts-->widgets
+    components-->widgets
+    end
+    subgraph supporting-folders
+    __tests__
+    __mocks__
+    stories
+    end
 ```
 
 ```json
