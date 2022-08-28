@@ -72,6 +72,35 @@ flowchart TB
     end
 ```
 
+```mermaid
+flowchart TB
+    styles-->shared-folders
+    styles-->component-folders
+    shared-folders-->component-folders
+    styles-->supporting-folders
+    component-folders-->supporting-folders
+    shared-folders-->supporting-folders
+    subgraph shared-folders
+    types-->constants
+    constants-->types
+    types-->helpers
+    constants-->helpers
+    constants-->hooks
+    helpers-->hooks
+    types-->hooks
+    end
+    subgraph component-folders
+    component-base-->component
+    component-->component-panel
+    component-input-->component-panel
+    end
+    subgraph supporting-folders
+    __tests__
+    __mocks__
+    stories
+    end
+```
+
 ```json
 {
   "firstName": "John",
