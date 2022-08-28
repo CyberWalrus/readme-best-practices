@@ -1,22 +1,15 @@
-# Ligastavok UI-KIT
+# @LS UI-KIT
 
-## Описание
+## Описание<a name="info"></a>
 
 Библиотека react компонентов предназначена для использования во внутренних проектах и для настольного и мобильного сайта
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Структура проекта](#project)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- [Описание](#info)
+- [Структура проекта](#structure)
+- [Подходы к разработке компонентов](#usage)
+- [Storybook](#credits)
+- [Ссылки](#credits)
+- [Тесты](#license)
 
 ## Installation
 
@@ -28,11 +21,23 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
-## Структура проекта<a name="project"></a>
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+## Структура проекта<a name="structure"></a>
 
 List your collaborators, if any, with links to their GitHub profiles.
 
