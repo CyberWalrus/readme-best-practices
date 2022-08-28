@@ -6,6 +6,7 @@
 
 - [Описание](#info)
 - [Структура проекта](#structure)
+  - [Диаграмма зависимостей](#dependence)
 - [Подходы к разработке компонентов](#usage)
 - [Storybook](#credits)
 - [Ссылки](#credits)
@@ -28,23 +29,24 @@ graph TD;
     styles-->layouts;
     styles-->components;
     styles-->widgets;
-    styles-->styles;
+    styles-->hooks;
     helpers-->basics;
     helpers-->layouts;
     helpers-->components;
     helpers-->widgets;
-    helpers-->helpers;
+    helpers-->hooks;
     basics-->layouts;
     basics-->components;
     basics-->widgets;
-    basics-->basics;
     layouts-->components;
     layouts-->widgets;
-    layouts-->layouts;
     components-->widgets;
     components-->components;
-    widgets-->widgets;
+    hooks-->components
+    hooks-->layouts
+    hooks-->widgets
 ```
+
 
 ```json
 {
@@ -61,6 +63,8 @@ List your collaborators, if any, with links to their GitHub profiles.
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
 If you followed tutorials, include links to those here as well.
+### Диаграмма зависимостей<a name="dependence"></a>
+![зависимости](./structure.png)
 
 ## License
 
