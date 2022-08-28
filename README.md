@@ -23,10 +23,21 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    styles-->helpers;
+    styles-->basics;
+    styles-->layouts;
+    styles-->components;
+    styles-->widgets;
+    helpers-->basics;
+    helpers-->layouts;
+    helpers-->components;
+    helpers-->widgets;
+    basics-->layouts;
+    basics-->components;
+    basics-->widgets;
+    layouts-->components;
+    layouts-->widgets;
+    components-->widgets;
 ```
 
 ```json
