@@ -28,17 +28,22 @@ graph TD;
     styles-->layouts;
     styles-->components;
     styles-->widgets;
+    styles-->styles;
     helpers-->basics;
     helpers-->layouts;
     helpers-->components;
     helpers-->widgets;
+    helpers-->helpers;
     basics-->layouts;
     basics-->components;
     basics-->widgets;
+    basics-->basics;
     layouts-->components;
     layouts-->widgets;
+    layouts-->layouts;
     components-->widgets;
     components-->components;
+    widgets-->widgets;
 ```
 
 ```json
